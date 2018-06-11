@@ -10,6 +10,6 @@ example:
 
 1.get slave status
 
-!#GET_STUATUS
+!#G
 
-!@OK TEMP HUM
+!@Y TEMP HUM
