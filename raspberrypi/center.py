@@ -6,6 +6,7 @@ class ardunio_boy:
 		self.ardunio_serial = serial.Serial(com_name, com_baud, timeout=1)
 		print('ardunio_boy up!')
 	def show_dht11(self):
+		self.ardunio_serial.write('!#STATUS')
 		DH11_content = self.ardunio_serial.readline()
 		print(DH11_content)
 		
